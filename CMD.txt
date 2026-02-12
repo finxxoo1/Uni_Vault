@@ -1,0 +1,119 @@
+╔═══════════════════════════════════════════════════════════════╗
+║                                                               ║
+║     🎓 UniVault MVP - COPY & PASTE COMMANDS                   ║
+║                                                               ║
+╚═══════════════════════════════════════════════════════════════╝
+
+IMPORTANT: Run these commands IN ORDER, one at a time!
+
+════════════════════════════════════════════════════════════════
+
+📦 STEP 1: INSTALL DEPENDENCIES
+════════════════════════════════════════════════════════════════
+
+npm install
+
+⏳ Wait for this to finish before continuing!
+
+════════════════════════════════════════════════════════════════
+
+🚀 STEP 2: DEPLOY SMART CONTRACTS
+════════════════════════════════════════════════════════════════
+
+npm run deploy-contract
+
+⚠️ CRITICAL: After running this command:
+1. You will see 3 account addresses
+2. Go to: https://bank.testnet.algorand.network/
+3. Paste EACH address and click "Dispense"
+4. Fund all 3 accounts (it's free test ALGO)
+5. Wait 30 seconds for the script to continue
+
+💡 The script will automatically create:
+   ✅ Conditional Vault
+   ✅ Multi-Signature Vault
+   ✅ NFT Event Ticket
+
+════════════════════════════════════════════════════════════════
+
+▶️ STEP 3: START THE SERVER
+════════════════════════════════════════════════════════════════
+
+npm start
+
+✅ You should see "UniVault MVP Server" message
+
+════════════════════════════════════════════════════════════════
+
+🌐 STEP 4: OPEN THE APP
+════════════════════════════════════════════════════════════════
+
+Open your browser and go to:
+
+http://localhost:3000
+
+════════════════════════════════════════════════════════════════
+
+🎯 DEMO CHECKLIST
+════════════════════════════════════════════════════════════════
+
+In the app, show judges:
+
+✅ Dashboard Tab:
+   - Deployment status
+   - Conditional vault address
+   - Multi-sig vault (2 of 3 signatures)
+   - NFT ticket with Asset ID
+
+✅ Create Vault Tab:
+   - Create new vault with custom goal
+   - Set deadline
+   - Generate vault address
+
+✅ Tickets Tab:
+   - Verify ticket ownership
+   - Enter wallet address + Asset ID
+   - See verification result
+
+════════════════════════════════════════════════════════════════
+
+🔍 BONUS: VIEW ON BLOCKCHAIN EXPLORER
+════════════════════════════════════════════════════════════════
+
+After deployment, you'll get an Asset ID. View it at:
+
+https://testnet.algoexplorer.io/asset/[YOUR_ASSET_ID]
+
+Replace [YOUR_ASSET_ID] with the actual number from deployment
+
+════════════════════════════════════════════════════════════════
+
+🛠️ TROUBLESHOOTING
+════════════════════════════════════════════════════════════════
+
+Problem: "Cannot find module @algorand/algosdk"
+Solution: Run "npm install" again
+
+Problem: "Deployment failed"
+Solution: Make sure you funded all 3 accounts at the faucet
+
+Problem: "Port 3000 already in use"
+Solution: Edit .env file and change PORT=3000 to PORT=3001
+
+Problem: "No deployment info found"
+Solution: Run "npm run deploy-contract" first
+
+════════════════════════════════════════════════════════════════
+
+📱 THAT'S IT! YOU'RE READY TO DEMO!
+════════════════════════════════════════════════════════════════
+
+Your UniVault MVP includes:
+✅ Smart contract vaults on Algorand
+✅ Multi-contributor management
+✅ Conditional fund release
+✅ NFT ticketing system
+✅ Mobile-first web interface
+✅ Real blockchain deployment
+
+Good luck! 🚀
